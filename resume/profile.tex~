@@ -1,0 +1,25 @@
+\cvsection{Personal Profile}
+\begin{cventries}
+  \cventry
+    {PhD in \textsc{Astronomy}}
+    {\textbf{Stockholm University} - Department of Astronomy}
+    {Stockholm, Sweden}
+    {Aug. 2012 - Present}
+    {
+        \begin{cvitems}
+                \item {Licentiate thesis: \href{http://asadisaghar.github.io/Licentiate-thesis/}{``Gravitational lensing and radio interferometry as a probe of the small--scale structure of dark matter''}}
+        \end{cvitems}
+    }
+  \cventry
+    {MSc. in \textsc{Astronomy}}
+    {\textbf{Stockholm University} - Department of Astronomy}
+    {Stockholm, Sweden}
+    {Sep. 2010 - Jun. 2012}
+    {Thesis: \href{http://asadisaghar.github.io/MSc-thesis/}{``Gravitational millilensing as a probe of dark halo substructure''}}
+  \cventry
+    {BSc. in \textsc{Physics}}
+    {\textbf{Shahid Beheshti University} - Department of Physics}
+    {Tehran, Iran}
+    {Sep. 2005 - Jun. 2009}
+    {Major: ``Atomic and molecular physics''}
+\end{cventries}

@@ -1,0 +1,9 @@
+\cvsection{Languages}
+
+  \begin{cvitems}
+    \vspace{.5\baselineskip}
+
+   \item \small{Python(4.5), Cython(2.5), MATLAB(4), R(2), nodejs(3.5), C(1), FORTRAN(0.5), \LaTeX(4.5), English(4.5), Farsi(5), Swedish(3.5), French(1)}
+   \item \small{SKlearn(4.5), TensorFlow(2), NumPy(5), Pandas(4), Matplotlib(4), D3(3)}
+
+  \end{cvitems}

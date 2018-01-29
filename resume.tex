@@ -1,0 +1,126 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[11pt, a4paper]{awesome-cv}
+
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+%%\definecolor{linkcolour}{RGB}{0.5,0.0,0.8}
+\definecolor{linkcolour}{rgb}{0.4,0.4,0.4}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\usepackage{fontspec}
+%\defaultfontfeatures{Mapping=tex-text}
+%\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+%%% modified for Karol Kozioł for ShareLaTeX use
+%% \setmainfont[
+%% SmallCapsFont = Fontin-SmallCaps.otf,
+%% BoldFont = Fontin-Bold.otf,
+%% ItalicFont = Fontin-Italic.otf
+%% ]
+%% {Fontin.otf}
+%%%
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-orange}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     3rd party packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Needed to divide into several files
+\usepackage{import}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Personal Data
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Essentials
+\name{Saghar}{Asadi}
+\mobile{(+47) 918 22 363} 
+%%% Social
+%\fontsize{5}{5}
+\email{{saghar@InnovationGarage.no}}
+\github{asadisaghar}
+\linkedin{asadisaghar}
+%%% Optionals
+\position{\vspace{2mm}{ Data scientist }}
+%%\quote{``Make the change that you want to see in the world."}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Content
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Make a footer for CV with three arguments(<left>, <center>, <right>)
+\makecvfooter
+  {\today}
+  {Saghar Asadi~~~·~~~Résumé}
+  {\thepage}
+
+\usepackage{etoolbox}
+\patchcmd{\cventry}% <cmd>
+  {\\ \end{tabular*}}% <search>
+  {\\[-1\normalbaselineskip]\end{tabular*}}% <replace>
+  {}{}% <success><failure>
+\begin{document}
+%%% Make a header for CV with personal data
+\makecvheader
+%\vfill
+%%% Import contents
+\import{\sectiondir}{profile.tex}
+\vfill
+\import{\sectiondir}{languages.tex}
+\vfill
+\import{\sectiondir}{results.tex}
+\vfill
+\import{\sectiondir}{research.tex}
+\vfill
+\import{\sectiondir}{timeline.tex}
+%\vfill
+%\import{\sectiondir}{interests.tex}
+
+%\import{\sectiondir}{tools.tex}
+%\vfill
+%%\import{\sectiondir}{extracurricular.tex}
+%%\import{\sectiondir}{honors.tex}
+%%\import{\sectiondir}{presentation.tex}
+%%\import{\sectiondir}{writing.tex}
+%%\import{\sectiondir}{committees.tex}
+\end{document}
