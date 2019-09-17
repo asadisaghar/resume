@@ -18,7 +18,7 @@
 %     Configuration
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themes: Awesome-CV
-\documentclass[11pt, a4paper]{awesome-cv}
+\documentclass[10pt, a4paper]{awesome-cv}
 
 %%% Override a directory location for fonts(default: 'fonts/')
 \fontdir[fonts/]
@@ -50,8 +50,9 @@
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
 %% Color for highlight
 % Define your custom color if you don't like awesome colors
-\colorlet{awesome}{awesome-orange}
+%\colorlet{awesome}{awesome-orange}
 %\definecolor{awesome}{HTML}{CA63A8}
+\definecolor{awesome}{RGB}{254,153,41}
 %% Colors for text
 %\definecolor{darktext}{HTML}{414141}
 %\definecolor{text}{HTML}{414141}
@@ -81,7 +82,7 @@
 \github{asadisaghar}
 \linkedin{asadisaghar}
 %%% Optionals
-\position{\vspace{2mm}{ Data scientist }}
+\position{\vspace{2mm}{ Data Scientist }}
 %%\quote{``Make the change that you want to see in the world."}
 
 
@@ -90,9 +91,15 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Make a footer for CV with three arguments(<left>, <center>, <right>)
 \makecvfooter
-  {\today}
-  {Saghar Asadi~~~·~~~Résumé}
-  {\thepage}
+    {}
+    %    {Knowledge is power. Analyzed data is knowledge. For us, our society, our world.}
+    {Knowledge is power. Analysis unlocks the knowledge in data, giving us its power and letting us make the world a better place.}
+%    {knowledge => power, data analysis => knowledge @ me, our group, our society}
+    {}
+
+  %% {\today}
+  %% {Saghar Asadi~~~·~~~Data Scientist}
+  %% {\thepage}
 
 \usepackage{etoolbox}
 \patchcmd{\cventry}% <cmd>
